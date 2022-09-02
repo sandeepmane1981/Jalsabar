@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800,900");
+
+html {
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-image: url('Images/LiqiourBottlesWhite.png');
+	background-attachment: fixed;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.accordion-button{
+	padding-top : 3px;
+	padding-bottom : 3px;
+	font-size: 18px;
+}
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+	width: 50px;
+	height: 50px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+	width: 70px;
+	height: 70px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 35px;
+	border-color: black;
+}
+
+.img-circle {
+	width: 70px;
+	height: 70px;
+	object-fit: contain;
+	background-color: white;
+}
+
+.img-circle-small {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	background-color: white;
+	margin-right: 10px;
+}
+
+.figcaption {
+	text-align: center;
+}
+
+.dropdown-content {
+	position: absolute;
+	width: 100vw;
+	max-width: none;
+	transform: translate(-50%, 0%) z-index: 1;
+}
+
+.section {
+	color: #ffffff;
+	height: 75vh;
+	margin: 0;
+	scroll-margin-top: 3em;
+}
+
+.content h2 {
+	font-family: "Sarabun", sans-serif;
+	color: #fff;
+	font-size: 2em;
+	position: absolute;
+	margin-left: 30px;
+	transform: translate(-50%, -50%);
+	font-family: "Sarabun", sans-serif;
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 0.5px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+	color: #03a9f4;
+	animation: animate 4s ease-in-out infinite;
+}
+
+.nonveg {
+	width: 10%;
+	height: 10%;
+}
+.hideentag {
+	font-size: 0px; 
+	margin:0; 
+	color: white;
+}
+@keyframes animate {
+
+	0%,
+	100% {
+		clip-path: polygon(0% 45%,
+				16% 44%,
+				33% 50%,
+				54% 60%,
+				70% 61%,
+				84% 59%,
+				100% 52%,
+				100% 100%,
+				0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 60%,
+				15% 65%,
+				34% 66%,
+				51% 62%,
+				67% 50%,
+				84% 45%,
+				100% 46%,
+				100% 100%,
+				0% 100%);
+	}
