@@ -11,6 +11,7 @@ body {
 	background-attachment: fixed;
 	height: 100%;
 	overflow: scroll;
+	background-color: gray;
 	-webkit-overflow-scrolling: touch;
 }
 .accordion-button{
@@ -98,8 +99,8 @@ body {
 }
 
 .nonveg {
-	width: 10%;
-	height: 10%;
+	width: 30px;
+	height: 30px;
 }
 .hideentag {
 	font-size: 0px; 
@@ -132,3 +133,20 @@ body {
 				100% 100%,
 				0% 100%);
 	}
+	
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
