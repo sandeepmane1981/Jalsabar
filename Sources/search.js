@@ -9,6 +9,25 @@ function resetSearchInput() {
     });
 }
 
+function showDrinkMenu()
+{
+/*$("d iv.accordion-item.drink").each(function(i) {
+	$(this).show();
+}
+$("div.accordion-item.food").each(function(i) {
+	$(this).hide();
+}	 */
+}
+
+function showFoodMenu()
+{
+	/*$("div.accordion-item.drink").each(function(i) {
+	$(this).hide();
+}
+$("div.accordion-item.food").each(function(i) {
+	$(this).show();
+ }	 */
+}
 
 function chefSpecial() {
     var value = 'chef';
@@ -35,7 +54,7 @@ $(document).ready(function() {
         });
 
 
-        $("div.accordion-item").each(function(i) {
+        $("div.accordion-item.drink").each(function(i) {
             if ($(this).height() <= 130) {
                 $(this).hide();
             } else {
