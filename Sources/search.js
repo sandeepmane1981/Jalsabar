@@ -45,7 +45,9 @@ function chefSpecial() {
         });
 }
 
+
 $(document).ready(function() {
+
 
     $("#searchMenu").on("keyup focus clear", function() {
         var value = $(this).val().toLowerCase();
@@ -68,3 +70,4 @@ $(document).ready(function() {
 
     });
 });
+
