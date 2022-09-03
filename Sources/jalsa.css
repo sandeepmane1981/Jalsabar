@@ -76,7 +76,6 @@ body {
 	height: 75vh;
 	margin: 0;
 	scroll-margin-top: 3em;
-	scroll-snap-margin: 70px 0 0 0;
 }
 
 .content h2 {
@@ -150,4 +149,11 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+:target {
+    display: block;    
+    position: relative;     
+    top: -100px;
+    visibility: hidden;
 }

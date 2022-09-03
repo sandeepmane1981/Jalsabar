@@ -55,10 +55,14 @@ $(document).ready(function() {
 
 
         $("div.accordion-item").each(function(i) {
-            if ($(this).height() <= 130) {
+            if ($(this).height() <= 130 && $(this).height() > 60 ) {
                 $(this).hide();
             } else {
-                $(this).show();
+				if ($(this).height() < 60) 
+				{ 
+			//$(this).collapse('toggle'); 
+			}
+                $(this).show(); 
             }
         });
 
