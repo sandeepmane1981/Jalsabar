@@ -32,9 +32,7 @@
       </nav>
       <nav class="navbar fixed-bottom bg-dark">
          <div class="container">
-            <a type="button" class="btn btn-default" style="color: #03a9f4;" onclick="resetSearchInput(); return true;" href="#Whisky">
-            <span class="material-symbols-outlined">home</span></br>Home
-            </a>
+           
             <div class="dropup">
                <button class="btn" style="color: #03a9f4;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                <span class="material-symbols-outlined">liquor</span></br>Drink
@@ -42,12 +40,12 @@
                <div class="container dropdown-menu text-center shadow-lg p-3" style="position: absolute;
                   width: 120vw;
                   max-width: none;
-                  transform: translate(-43%,0%);
+                  transform: translate(-10%,0%);
                   padding:40%;
                   ">
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Whisky">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Whisky">
                            <figure>
                               <img src="Sources/Images/Whisky.jpg" class="rounded-circle border border-primary img-circle"  alt="Whisky"></img>
                               <figcaption>Whisky</figcaption>
@@ -55,7 +53,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Rum">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Rum">
                            <figure>
                               <img src="Sources/Images/Rum.jpg" class="rounded-circle border border-primary img-circle"  alt="Rum"></img>
                               <figcaption>Rum</figcaption>
@@ -63,7 +61,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Scotch">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Scotch">
                            <figure>
                               <img src="Sources/Images/Scotch.jpg" class="rounded-circle border border-primary img-circle" alt="Scotch"></img>
                               <figcaption>Scotch</figcaption>
@@ -73,7 +71,7 @@
                   </div>
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Vodka">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Vodka">
                            <figure>
                               <img src="Sources/Images/Vodka.jpg" class="rounded-circle border border-primary img-circle"alt="Vodka"></img>
                               <figcaption>Vodka</figcaption>
@@ -81,7 +79,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Gin">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Gin">
                            <figure>
                               <img src="Sources/Images/Gin.jpg" class="rounded-circle border border-primary img-circle"alt="Gin"></img>
                               <figcaption>Gin</figcaption>
@@ -89,7 +87,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Wine">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Wine">
                            <figure>
                               <img src="Sources/Images/Wine.jpg" class="rounded-circle border border-primary img-circle"alt="Wine"></img>
                               <figcaption>Wine</figcaption>
@@ -99,7 +97,7 @@
                   </div>
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Beer">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Beer">
                            <figure>
                               <img src="Sources/Images/Beer.jpg" class="rounded-circle border border-primary img-circle"alt="Beer"></img>
                               <figcaption>Beer</figcaption>
@@ -107,7 +105,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#ColdBeverages">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#ColdBeverages">
                            <figure>
                               <img src="Sources/Images/ColdBeverages.jpg" class="rounded-circle border border-primary img-circle"alt="Beverages"></img>
                               <figcaption>Beverages</figcaption>
@@ -115,7 +113,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Cigarette">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Cigarette">
                            <figure>
                               <img src="Sources/Images/Cigarette.jpg" class="rounded-circle border border-primary img-circle"alt="Cigarette"></img>
                               <figcaption>Cigarette</figcaption>
@@ -125,7 +123,7 @@
                   </div>
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Cocktail">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Cocktail">
                            <figure>
                               <img src="Sources/Images/Cocktail.jpg" class="rounded-circle border border-primary img-circle"alt="Cocktail"></img>
                               <figcaption>Cocktail</figcaption>
@@ -133,7 +131,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Mocktail">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showDrinkMenu(); return true;" href="#Mocktail">
                            <figure>
                               <img src="Sources/Images/Mocktail.jpg" class="rounded-circle border border-primary img-circle"alt="Mocktail"></img>
                               <figcaption>Mocktail</figcaption>
@@ -150,12 +148,12 @@
                <div class="container dropdown-menu text-center shadow-lg p-3" style="position: absolute;
                   width: 120vw;
                   max-width: none;
-                  transform: translate(-75%,0%);
+                  transform: translate(-43%,0%);
                   padding:40%;
                   ">
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Appetizers">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Appetizers">
                            <figure>
                               <img src="Sources/Images/Appetizers.jpg" class="rounded-circle border border-primary img-circle"  alt="Appetizers"></img>
                               <figcaption>Appetizers</figcaption>
@@ -163,7 +161,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#MainCourse">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#MainCourse">
                            <figure>
                               <img src="Sources/Images/MainCourse.jpg" class="rounded-circle border border-primary img-circle" alt="Main Course"></img>
                               <figcaption>Main Course</figcaption>
@@ -171,7 +169,7 @@
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Starters">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Starters">
                            <figure>
                               <img src="Sources/Images/Starters.jpg" class="rounded-circle border border-primary img-circle"  alt="Starters"></img>
                               <figcaption>Starters</figcaption>
@@ -181,7 +179,7 @@
                   </div>
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Biryani">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Biryani">
                            <figure>
                               <img src="Sources/Images/Biryani.jpg" class="rounded-circle border border-primary img-circle"alt="Biryani"></img>
                               <figcaption>Biryani</figcaption>
@@ -190,14 +188,14 @@
                      </div>
                      <div class="col">
                         <figure>
-                           <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Breads">
+                           <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Breads">
                               <img src="Sources/Images/Breads.jpg" class="rounded-circle border border-primary img-circle"alt="Breads"></img>
                               <figcaption>Breads</figcaption>
                         </figure>
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Chinese">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Chinese">
                            <figure>
                               <img src="Sources/Images/Chinese.jpg" class="rounded-circle border border-primary img-circle"alt="Chinese"></img>
                               <figcaption>Chinese</figcaption>
@@ -208,7 +206,7 @@
                   <div class="row align-items-center">
                      <div class="col">
                         <figure>
-                           <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Rice">
+                           <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Rice">
                               <img src="Sources/Images/Rice.jpg" class="rounded-circle border border-primary img-circle"alt="Rice"></img>
                               <figcaption>Rice</figcaption>
                         </figure>
@@ -216,14 +214,14 @@
                      </div>
                      <div class="col">
                         <figure>
-                           <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Sandwitch">
+                           <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Sandwitch">
                               <img src="Sources/Images/Sandwitch.jpg" class="rounded-circle border border-primary img-circle"alt="Sandwitch"></img>
                               <figcaption>Sandwitch</figcaption>
                         </figure>
                         </a>
                      </div>
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Egg">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Egg">
                            <figure>
                               <img src="Sources/Images/Egg.jpg" class="rounded-circle border border-primary img-circle"alt="Egg"></img>
                               <figcaption>Egg</figcaption>
@@ -233,7 +231,7 @@
                   </div>
                   <div class="row align-items-center">
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); chefSpecial();" href="#Chef">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); chefSpecial();" href="#Chef">
                            <figure>
                               <img src="Sources/Images/Chef.jpg" class="rounded-circle border border-primary img-circle"alt="Chef's Specail"></img>
                               <figcaption>Chef's Special</figcaption>
@@ -241,13 +239,13 @@
                         </a>
                      </div>
                      <!-- <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Today"><figure>
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Today"><figure>
                            <img src="Sources/Images/Today.jpg" class="rounded-circle border border-primary img-circle"alt="Today's Specail"></img>
                            <figcaption>Today's Specail</figcaption>
                         </figure></a>
                         </div> -->
                      <div class="col">
-                        <a class="dropdown-item" onclick="resetSearchInput(); return true;" href="#Soup">
+                        <a class="dropdown-item" onclick="resetSearchInput(); showFoodMenu(); return true;" href="#Soup">
                            <figure>
                               <img src="Sources/Images/Soup.jpg" class="rounded-circle border border-primary img-circle"alt="Soup"></img>
                               <figcaption>Soup</figcaption>
@@ -257,7 +255,10 @@
                   </div>
                </div>
             </div>
-         </div>
+          <button type="button" class="btn btn-default" style="color: #03a9f4;" onclick="resetSearchInput(); showDrinkMenu(); return true;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="material-symbols-outlined">info</span></br>About
+            </button>
+		 </div>
       </nav>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -313,7 +314,7 @@
                            <div class="col">
                               <a  href="https://goo.gl/maps/Xif2uSrwXWQRgVhP6">
                                  <figure>
-                                    <img src="Sources/Images/google.jpg" class="rounded-circle border border-primary img-circle" alt="Google"></img>
+                                    <img src="Sources/Images/Google.jpg" class="rounded-circle border border-primary img-circle" alt="Google"></img>
                                  </figure>
                               </a>
                            </div>
@@ -333,14 +334,14 @@
                            <div class="col">
                               <a  href="https://www.instagram.com/jalsa.restaurant.bar/">
                                  <figure>
-                                    <img src="Sources/Images/instagram.svg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
+                                    <img src="Sources/Images/Instagram.svg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
                                  </figure>
                               </a>
                            </div>
                            <div class="col">
                               <a  href="https://www.swiggy.com/restaurants/jalsa-restaurant-kothrud-pune-590513?sld=false">
                                  <figure>
-                                    <img src="Sources/Images/swiggy.jpg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
+                                    <img src="Sources/Images/Swiggy.jpg" class="rounded-circle border border-primary img-circle" alt="Instagram"></img>
                                  </figure>
                               </a>
                            </div>
@@ -354,10 +355,10 @@
       </div>
       <div class="accordion accordion-flush" id="mainDiv">
 	  <div class="container">
-         <a class="section" style="scroll-margin-top: 5em;" id="Whisky"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Whisky-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Whisky-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Whisky.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Whisky">Whisky</a>      </button>    </h2>
-            <div id="Whisky-collapse" class="accordion-collapse collapse show" aria-labelledby="Whisky-heading">
+         <a class="section" style="scroll-margin-top: 5em; scroll-snap-margin: 50px 0 0 0;" id="Whisky"></a>	   
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Whisky-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Whisky-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Whisky.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Whisky">Whisky</a>      </button>    </h2>
+            <div id="Whisky-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Whisky-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -514,9 +515,9 @@
             </div>
          </div>
          <a class="section" id="Rum"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Rum-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rum-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rum.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rum">Rum</a>      </button>    </h2>
-            <div id="Rum-collapse" class="accordion-collapse collapse show" aria-labelledby="Rum-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Rum-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rum-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rum.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rum">Rum</a>      </button>    </h2>
+            <div id="Rum-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Rum-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -582,9 +583,9 @@
             </div>
          </div>
          <a class="section" id="Scotch"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Scotch-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Scotch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Scotch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Scotch">Scotch</a>      </button>    </h2>
-            <div id="Scotch-collapse" class="accordion-collapse collapse show" aria-labelledby="Scotch-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Scotch-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Scotch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Scotch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Scotch">Scotch</a>      </button>    </h2>
+            <div id="Scotch-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Scotch-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -685,9 +686,9 @@
             </div>
          </div>
          <a class="section" id="Vodka"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Vodka-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Vodka-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Vodka.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Vodka">Vodka</a>      </button>    </h2>
-            <div id="Vodka-collapse" class="accordion-collapse collapse show" aria-labelledby="Vodka-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Vodka-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Vodka-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Vodka.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Vodka">Vodka</a>      </button>    </h2>
+            <div id="Vodka-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Vodka-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -781,9 +782,9 @@
             </div>
          </div>
          <a class="section" id="Gin"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Gin-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Gin-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Gin.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Gin">Gin</a>      </button>    </h2>
-            <div id="Gin-collapse" class="accordion-collapse collapse show" aria-labelledby="Gin-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Gin-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Gin-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Gin.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Gin">Gin</a>      </button>    </h2>
+            <div id="Gin-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Gin-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -814,9 +815,9 @@
             </div>
          </div>
          <a class="section" id="Wine"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Wine-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Wine-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Wine.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Wine">Wine</a>      </button>    </h2>
-            <div id="Wine-collapse" class="accordion-collapse collapse show" aria-labelledby="Wine-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Wine-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Wine-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Wine.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Wine">Wine</a>      </button>    </h2>
+            <div id="Wine-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Wine-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -838,9 +839,9 @@
             </div>
          </div>
          <a class="section" id="Beer"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Beer-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Beer-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Beer.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Beer">Beer</a>      </button>    </h2>
-            <div id="Beer-collapse" class="accordion-collapse collapse show" aria-labelledby="Beer-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Beer-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Beer-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Beer.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Beer">Beer</a>      </button>    </h2>
+            <div id="Beer-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Beer-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -990,9 +991,9 @@
             </div>
          </div>
          <a class="section" id="ColdBeverages"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="ColdBeverages-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ColdBeverages-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/ColdBeverages.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="ColdBeverages">Cold Beverages</a>      </button>    </h2>
-            <div id="ColdBeverages-collapse" class="accordion-collapse collapse show" aria-labelledby="ColdBeverages-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="ColdBeverages-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ColdBeverages-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/ColdBeverages.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="ColdBeverages">Cold Beverages</a>      </button>    </h2>
+            <div id="ColdBeverages-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="ColdBeverages-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -1046,9 +1047,9 @@
             </div>
          </div>
          <a class="section" id="Cocktail"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Cocktail-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cocktail">Cocktail</a>      </button>    </h2>
-            <div id="Cocktail-collapse" class="accordion-collapse collapse show" aria-labelledby="Cocktail-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Cocktail-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cocktail">Cocktail</a>      </button>    </h2>
+            <div id="Cocktail-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Cocktail-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -1864,9 +1865,9 @@
             </div>
          </div>
          <a class="section" id="Mocktail"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Mocktail-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Mocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Mocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Mocktail">Mocktail</a>      </button>    </h2>
-            <div id="Mocktail-collapse" class="accordion-collapse collapse show" aria-labelledby="Mocktail-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Mocktail-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Mocktail-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Mocktail.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Mocktail">Mocktail</a>      </button>    </h2>
+            <div id="Mocktail-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Mocktail-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -1975,9 +1976,9 @@
             </div>
          </div>
          <a class="section" id="Cigarette"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Cigarette-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cigarette-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cigarette.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cigarette">Cigarette</a>      </button>    </h2>
-            <div id="Cigarette-collapse" class="accordion-collapse collapse show" aria-labelledby="Cigarette-heading">
+         <div class="accordion-item drink mt-3">
+            <h2 class="accordion-header" id="Cigarette-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Cigarette-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Cigarette.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Cigarette">Cigarette</a>      </button>    </h2>
+            <div id="Cigarette-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Cigarette-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -2057,9 +2058,9 @@
             </div>
          </div>
          <a class="section" id="Appetizers"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Appetizers-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Appetizers-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Appetizers.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Appetizers">Appetizers</a>      </button>    </h2>
-            <div id="Appetizers-collapse" class="accordion-collapse collapse show" aria-labelledby="Appetizers-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Appetizers-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Appetizers-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Appetizers.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Appetizers">Appetizers</a>      </button>    </h2>
+            <div id="Appetizers-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Appetizers-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -2388,9 +2389,9 @@
             </div>
          </div>
          <a class="section" id="MainCourse"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="MainCourse-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainCourse-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/MainCourse.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="MainCourse">Main Course</a>      </button>    </h2>
-            <div id="MainCourse-collapse" class="accordion-collapse collapse show" aria-labelledby="MainCourse-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="MainCourse-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainCourse-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/MainCourse.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="MainCourse">Main Course</a>      </button>    </h2>
+            <div id="MainCourse-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="MainCourse-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -2884,9 +2885,9 @@
             </div>
          </div>
          <a class="section" id="Starters"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Starters-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Starters-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Starters.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Starters">Starters</a>      </button>    </h2>
-            <div id="Starters-collapse" class="accordion-collapse collapse show" aria-labelledby="Starters-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Starters-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Starters-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Starters.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Starters">Starters</a>      </button>    </h2>
+            <div id="Starters-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Starters-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3107,9 +3108,9 @@
             </div>
          </div>
          <a class="section" id="Biryani"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Biryani-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Biryani-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Biryani.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Biryani">Biryani</a>      </button>    </h2>
-            <div id="Biryani-collapse" class="accordion-collapse collapse show" aria-labelledby="Biryani-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Biryani-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Biryani-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Biryani.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Biryani">Biryani</a>      </button>    </h2>
+            <div id="Biryani-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Biryani-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3167,9 +3168,9 @@
             </div>
          </div>
          <a class="section" id="Breads"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Breads-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Breads-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Breads.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Breads">Breads</a>      </button>    </h2>
-            <div id="Breads-collapse" class="accordion-collapse collapse show" aria-labelledby="Breads-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Breads-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Breads-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Breads.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Breads">Breads</a>      </button>    </h2>
+            <div id="Breads-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Breads-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3271,9 +3272,9 @@
             </div>
          </div>
          <a class="section" id="Chinese"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Chinese-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Chinese-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Chinese.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Chinese">Chinese</a>      </button>    </h2>
-            <div id="Chinese-collapse" class="accordion-collapse collapse show" aria-labelledby="Chinese-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Chinese-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Chinese-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Chinese.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Chinese">Chinese</a>      </button>    </h2>
+            <div id="Chinese-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Chinese-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3367,9 +3368,9 @@
             </div>
          </div>
          <a class="section" id="Rice"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Rice-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rice-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rice.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rice">Rice</a>      </button>    </h2>
-            <div id="Rice-collapse" class="accordion-collapse collapse show" aria-labelledby="Rice-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Rice-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Rice-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Rice.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Rice">Rice</a>      </button>    </h2>
+            <div id="Rice-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Rice-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3407,9 +3408,9 @@
             </div>
          </div>
          <a class="section" id="Sandwitch"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Sandwitch-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Sandwitch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Sandwitch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Sandwitch">Sandwitch</a>      </button>    </h2>
-            <div id="Sandwitch-collapse" class="accordion-collapse collapse show" aria-labelledby="Sandwitch-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Sandwitch-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Sandwitch-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Sandwitch.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Sandwitch">Sandwitch</a>      </button>    </h2>
+            <div id="Sandwitch-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Sandwitch-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3447,9 +3448,9 @@
             </div>
          </div>
          <a class="section" id="Egg"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Egg-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Egg-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Egg.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Egg">Egg</a>      </button>    </h2>
-            <div id="Egg-collapse" class="accordion-collapse collapse show" aria-labelledby="Egg-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Egg-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Egg-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Egg.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Egg">Egg</a>      </button>    </h2>
+            <div id="Egg-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Egg-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
@@ -3483,9 +3484,9 @@
             </div>
          </div>
          <a class="section" id="Soup"></a>	   
-         <div class="accordion-item mt-3">
-            <h2 class="accordion-header" id="Soup-heading">      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Soup-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Soup.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Soup">Soup</a>      </button>    </h2>
-            <div id="Soup-collapse" class="accordion-collapse collapse show" aria-labelledby="Soup-heading">
+         <div class="accordion-item food mt-3">
+            <h2 class="accordion-header" id="Soup-heading">      <button class="accordion-button bg-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Soup-collapse"  aria-expanded="false" aria-controls="flush-collapseOne">        <img src="Sources/Images/Soup.jpg" class="rounded-circle border border-primary img-circle-small" alt="Mocktail"></img><a id="Soup">Soup</a>      </button>    </h2>
+            <div id="Soup-collapse" class="accordion-collapse collapse bg-info  show" aria-labelledby="Soup-heading">
                <div class="accordion-body">
                   <table class="table">
                      <tbody>
