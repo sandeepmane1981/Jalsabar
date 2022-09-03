@@ -54,7 +54,7 @@ $(document).ready(function() {
         });
 
 
-        $("div.accordion-item.drink").each(function(i) {
+        $("div.accordion-item").each(function(i) {
             if ($(this).height() <= 130) {
                 $(this).hide();
             } else {
